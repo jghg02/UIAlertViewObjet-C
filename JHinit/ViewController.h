@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "First.h"
 
 @interface ViewController : UIViewController
+
+@property (assign, nonatomic) NSString *xxx;
+@property (retain, nonatomic) First *first;
 
 
 @end

@@ -10,6 +10,8 @@
 
 @interface ViewController ()
 
+@property (strong, nonatomic) NSString *yyy;
+
 @end
 
 @implementation ViewController
@@ -17,18 +19,27 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+	
+	
+	self.first = [[First alloc] init];
+	[self.first initObject];
+	self.first.dato = @"Dato from ViewController!!!!";
+	[self.first showMessageInTerminal:self.first.dato];
+	
+	[self.first setDato:@"The other way!!!!"];
+	[_first showMessageInTerminal:[self.first dato]];
 }
 
 
 - (void)didReceiveMemoryWarning {
 	[super didReceiveMemoryWarning];
 	// Dispose of any resources that can be recreated.
+	
 }
 
 - (IBAction)onClickEvent:(id)sender {
 	//create UIAlerController
 	UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Question" message:@"Are you In!!!" preferredStyle:UIAlertControllerStyleAlert];
-	
 	
 	//Very Importan
 	__weak ViewController *weakSelf = self;

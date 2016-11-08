@@ -40,6 +40,3 @@ ___
 	[_first showMessageInTerminal:[self.first dato]];
 	
 	
-
-##Output 
-/Users/jhgonzalez/Desktop/Screen Shot 2016-10-08 at 4.40.59 PM.png
